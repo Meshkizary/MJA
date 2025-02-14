@@ -1,11 +1,11 @@
 const alternatives = [
   {text:"", images:"images/cat-01.gif"},
-  {text:"Te prometo que será inolvidable", images:"images/cat-02.gif"},
-  {text:"Piénsalo de nuevo", images:"images/cat-03.gif"},
-  {text:"Vamos, atrévete a un sí", images:"images/cat-04.gif"},
-  {text:"Que el miedo no te detenga", images:"images/cat-05.gif"},
+  {text:"Reconsider Please?", images:"images/cat-02.gif"},
+  {text:"Please?", images:"images/cat-03.gif"},
+  {text:"Say yes please?", images:"images/cat-04.gif"},
+  {text:"I know you want to say yes", images:"images/cat-05.gif"},
 ]
-const ohyes = {text:"Sabía que aceptarias", images:"images/cat-yes.gif"}
+const ohyes = {text:"I love you", images:"images/cat-yes.gif"}
 const cat = document.querySelector('.cat')
 const text = document.querySelector('.text')
 const buttons = document.querySelectorAll('.button')
@@ -27,7 +27,7 @@ errorButton.addEventListener('click', ()=>{
 
 buttons.forEach(button => {
   button.addEventListener('click', ()=>{
-      if(button.textContent == "Si"){
+      if(button.textContent == "Yes"){
           updateDisplay(ohyes)
           buttons.forEach(btn => btn.style.display = 'none')
       }
